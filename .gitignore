@@ -1,0 +1,42 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*.so
+*.dll
+*.dylib
+*.pyd
+*.pkl
+
+# Virtual environment
+venv/
+.env/
+*.env
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs & temp files
+*.log
+*.out
+*.err
+
+# Streamlit config files
+.streamlit/
+
+# Large model and dataset files
+model.pkl
+vectors.pkl
+vectors2.pkl
+courses.pkl
+coursera.pkl
+
+# Ignore large files over 100MB (GitHub limits max file size)
+*.h5
+*.pt
+*.t7
+*.ckpt
+*.joblib
