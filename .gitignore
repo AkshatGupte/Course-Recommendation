@@ -5,7 +5,6 @@ __pycache__/
 *.dll
 *.dylib
 *.pyd
-*.pkl
 
 # Virtual environment
 venv/
