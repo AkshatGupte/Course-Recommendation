@@ -27,12 +27,6 @@ Thumbs.db
 # Streamlit config files
 .streamlit/
 
-# Large model and dataset files
-model.pkl
-vectors.pkl
-vectors2.pkl
-courses.pkl
-coursera.pkl
 
 # Ignore large files over 100MB (GitHub limits max file size)
 *.h5
