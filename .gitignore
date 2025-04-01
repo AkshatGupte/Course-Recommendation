@@ -6,6 +6,7 @@ __pycache__/
 *.dylib
 *.pyd
 
+
 # Virtual environment
 venv/
 .env/
