@@ -7,7 +7,7 @@ query = st.text_input("Enter your search query:")
 
 if st.button("Recommend"):
     if query:
-        udemy_courses, coursera_courses = get_recommendations(query)
+        udemy_courses, coursera_courses,youtube_courses = get_recommendations(query)
 
         st.markdown("<h2 style='font-size:24px;'>Top Udemy Courses</h2>", unsafe_allow_html=True)
         st.markdown("<style>table {font-size: 18px;}</style>", unsafe_allow_html=True)
@@ -16,5 +16,9 @@ if st.button("Recommend"):
         st.markdown("<h2 style='font-size:28px;'>Top Coursera Courses</h2>", unsafe_allow_html=True)
         st.markdown("<style>table {font-size: 16px;}</style>", unsafe_allow_html=True)
         st.table(coursera_courses)
+
+        st.markdown("<h2 style='font-size:24px;'>Top YouTube Courses</h2>", unsafe_allow_html=True)
+        st.markdown("<style>table {font-size: 18px;}</style>", unsafe_allow_html=True)
+        st.table(youtube_courses)
     else:
         st.warning("Please enter a search query before clicking Recommend.")
